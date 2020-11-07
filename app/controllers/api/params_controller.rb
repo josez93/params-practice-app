@@ -1,7 +1,7 @@
 class Api::ParamsController < ApplicationController
-  def phrase
+  def query
     input = params["phrase"].upcase
-    @output = input
+    @output = " the phrase is  #{input}"
     render "phrase.json.jb"
   end
 end
